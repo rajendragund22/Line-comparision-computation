@@ -34,12 +34,10 @@ public class LineComparision {
 		Double line1=  Double.valueOf(lengthOfLine1);
 		Double line2=  Double.valueOf(lengthOfLine2);
 		
-		boolean check=line1.equals(line2 );
+		int comp = line1.compareTo(line2);
+		System.out.println("Length of Line is : " + comp);
 		
-		if(check)
-			System.out.println("Both lines are equal.");
-		else
-			System.out.println("Both lines are not equal.");
+
 	}
 
 }
